@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ECF2F8;
+}
+
+.Testimonies {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "Daniel Daniel Jonathan Kira"
+        "Jeanette Patrick Patrick Kira";
+    max-width: 70%;
+    padding: 20px;
+}
+
+.Testimonies article {
+    border-radius: 20px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Testimonies article:hover {
+transform: scale(1.10); 
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.Daniel { grid-area: Daniel; 
+    background-image: url(https://kabir-sagiii.github.io/CSS_Grid_learn-grid-the-easy-way/images/bg-pattern-quotation.svg);
+    background-position: top right;}
+.Jonathan { grid-area: Jonathan; }
+.Kira { grid-area: Kira; }
+.Jeanette { grid-area: Jeanette;}
+.Patrick { grid-area: Patrick;}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.Candidate {
+    padding-left: 10px;
+}
+
+.name {
+    font-size: 18px;
+    margin-bottom: 5px;
+    
+}
+
+.qualification {
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.description-1 {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.4;
+    
+}
+
+.description-2 {
+    font-size: 17px;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-weight: 900;
+}
